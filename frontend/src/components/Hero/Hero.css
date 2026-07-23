@@ -46,6 +46,22 @@
   bottom: 0;
 }
 
+.blured-bg-1 {
+  right: -40%;
+  top: 40%;
+  width: 30%;
+  z-index: 0;
+  animation: float 6s ease-in-out infinite;
+}
+
+.blured-bg-2 {
+  left: -50%;
+  top: -30%;
+  width: 30%;
+  z-index: 0;
+  animation: float 7s ease-in-out infinite;
+}
+
 .standing-girl {
   left: -15%;
   width: 32%;
