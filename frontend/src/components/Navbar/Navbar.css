@@ -1,4 +1,5 @@
 .navbar {
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,6 +8,9 @@
   background: transparent;
   font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navbar-logo {
@@ -33,16 +37,20 @@
 .navbar-menu-item {
   display: flex;
   align-items: center;
-  gap: 4px;
+  /* gap: 4px; */
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
   color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  height: 40px;
 }
 
 .navbar-menu-item:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  background-color: #5865F2;
 }
 
 .navbar-menu-icon {
@@ -68,4 +76,185 @@
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   /* color: #5865F2; */
   background-color: #5865F2;
+}
+
+/* Dropdown and Overlay Styles */
+
+.nav-blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.navbar-menu-item-container {
+  position: relative;
+}
+
+.navbar-menu-item.active {
+  text-decoration: none;
+  background-color: #5865F2;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background-color: #5865F2;
+  border-radius: 24px;
+  padding: 24px;
+  min-width: 280px;
+  z-index: 101;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+.dropdown-content,
+.dropdown-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.dropdown-columns {
+  display: flex;
+  gap: 32px;
+  position: relative;
+  z-index: 2;
+}
+
+.dropdown-divider {
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 8px;
+}
+
+.dropdown-section-title {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.dropdown-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  transition: opacity 0.2s;
+}
+
+.dropdown-link:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.dropdown-paper-roll {
+  position: absolute;
+  right: -25px;
+  top: 90%;
+  transform: translateY(-50%);
+  width: 160px;
+  z-index: 1;
+  pointer-events: none;
+  animation: slideUpFromBottom 0.6s ease-out forwards;
+}
+
+.dropdown-egg {
+  position: absolute;
+  right: -75px;
+  top: 110%;
+  transform: translateY(-50%);
+  width: 220px;
+  z-index: 1;
+  pointer-events: none;
+  animation: slideUpFromBottom 0.6s ease-out forwards;
+}
+
+.dropdown-prize {
+  position: absolute;
+  right: -50px;
+  top: 90%;
+  transform: translateY(-50%);
+  width: 180px;
+  z-index: 1;
+  pointer-events: none;
+  animation: slideUpFromBottom 0.6s ease-out forwards;
+}
+
+.dropdown-cat {
+  position: absolute;
+  right: -40px;
+  top: 90%;
+  transform: translateY(-50%);
+  width: 150px;
+  z-index: 1;
+  pointer-events: none;
+  animation: slideUpFromBottom 0.6s ease-out forwards;
+}
+
+.dropdown-disc {
+  position: absolute;
+  right: -35px;
+  top: 90%;
+  transform: translateY(-50%);
+  width: 140px;
+  z-index: 1;
+  pointer-events: none;
+  animation: slideUpFromBottom 0.6s ease-out forwards;
+}
+
+.dropdown-robo {
+  position: absolute;
+  right: -35px;
+  top: 90%;
+  transform: translateY(-50%);
+  width: 120px;
+  z-index: 1;
+  pointer-events: none;
+  animation: slideUpFromBottom 0.6s ease-out forwards;
+}
+
+.dropdown-divider-horizontal {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 4px 0;
+}
+
+.dropdown-menu.safety-dropdown {
+  min-width: 480px;
+}
+
+@keyframes slideUpFromBottom {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+
+  65% {
+    transform: translateY(-65%);
+    /* Overshoot upwards */
+    opacity: 1;
+  }
+
+  85% {
+    transform: translateY(-45%);
+    /* Bounce down slightly */
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-50%);
+    /* Settle at final position */
+    opacity: 1;
+  }
 }

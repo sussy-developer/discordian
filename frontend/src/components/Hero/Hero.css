@@ -1,7 +1,7 @@
 .hero-container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 40px;
+  margin: 100px auto 0 auto;
+  padding: 50px 40px 0px 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,7 +25,8 @@
 .hero-image-wrapper {
   position: relative;
   width: 100%;
-  max-width: 800px;
+  max-width: 500px;
+  max-height: 350px;
   /* Limit max size */
   display: flex;
   align-items: flex-end;
@@ -65,9 +66,9 @@
 }
 
 .robo-leaf {
-  left: 48%;
-  width: 25%;
-  bottom: 35%;
+  left: 43%;
+  width: 35%;
+  bottom: 40%;
   /* Adjust to sit right above pig's head */
   animation: float 3.5s ease-in-out infinite;
   z-index: 3;
@@ -82,12 +83,13 @@
 
 .hero-title {
   font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 72px;
+  font-size: 52px;
   /* Large font size */
   font-weight: 900;
   line-height: 0.9;
   /* Very tight line height as seen in the image */
   margin: 0;
+  margin-top: -200px;
   margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: -2px;
@@ -95,7 +97,7 @@
 
 .hero-subtitle {
   font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
   max-width: 720px;
