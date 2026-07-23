@@ -1,0 +1,10 @@
+/* App styles */
+
+.main-cont {
+  background-image: url('./assets/bgimg.png');
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden; /* Prevent horizontal scrolling or margin collapse issues */
+}
