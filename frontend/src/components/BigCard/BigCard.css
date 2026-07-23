@@ -1,0 +1,237 @@
+.big-card-wrapper {
+  max-width: 1380px;
+  margin: 160px auto 100px auto;
+  padding: 0 40px;
+  position: relative;
+}
+
+.party-gif {
+  position: absolute;
+  top: -86px;
+  /* Adjust to poke out */
+  right: 15%;
+  width: 150px;
+  z-index: 1;
+}
+
+.capcard {
+  position: absolute;
+  top: -130px;
+  right: -40px;
+  width: 250px;
+  z-index: 3;
+  /* animation: float 6s ease-in-out infinite; */
+}
+
+.blured-egg {
+  position: absolute;
+  bottom: -320px;
+  left: -40px;
+  width: 250px;
+  z-index: 1;
+  animation: float 5s ease-in-out infinite;
+}
+
+.blured-disc {
+  position: absolute;
+  bottom: -360px;
+  left: -10px;
+  width: 180px;
+  z-index: 1;
+  animation: float 4s ease-in-out infinite;
+}
+
+.big-card-container {
+  display: flex;
+  flex-direction: row;
+  background: rgba(56, 66, 176, 0.85);
+  border-radius: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 10px;
+  height: 580px;
+  /* Custom height */
+  position: relative;
+  z-index: 2;
+}
+
+.reverse-layout {
+  flex-direction: row-reverse;
+}
+
+.card-video-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 1000px; */
+  padding: 60px 40px;
+  border-radius: 64px;
+  position: relative;
+}
+
+.gradient-pink {
+  background: radial-gradient(circle at bottom left, #f3419f 0%, #9e3682 50%, #46255d 100%);
+  padding: 0;
+}
+
+.gradient-pink .card-video {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 64px;
+  /* Match the container's border radius */
+  box-shadow: none;
+  /* Remove shadow since it fills the box */
+}
+
+.gradient-green {
+  background: radial-gradient(circle at center, #6bc373 0%, #1e5a26 100%);
+  padding: 0;
+}
+
+.gradient-green .card-video {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 64px;
+  /* Match the container's border radius */
+  box-shadow: none;
+  /* Remove shadow since it fills the box */
+}
+
+.gradient-blue {
+  background: radial-gradient(circle at center, #5865F2 0%, #3a429b 100%);
+  padding: 0;
+}
+
+.gradient-blue .card-video {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 64px;
+  box-shadow: none;
+}
+
+.gradient-dark-pink {
+  background: radial-gradient(circle at center, #7b3149 0%, #e85599 100%);
+  padding: 0;
+}
+
+.gradient-dark-pink .card-video {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 64px;
+  box-shadow: none;
+}
+
+.gradient-dark-green {
+  background: radial-gradient(circle at center, #1b4d32 0%, #0d2716 100%);
+  padding: 0;
+}
+
+.gradient-dark-green .card-video {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 64px;
+  box-shadow: none;
+}
+
+.gradient-dark-blue {
+  background: radial-gradient(circle at center, #2e3579 0%, #151a44 100%);
+  padding: 0;
+}
+
+.gradient-dark-blue .card-video {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 64px;
+  box-shadow: none;
+}
+
+.carrot-img {
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  width: 180px;
+  z-index: 4;
+  animation: float 5s ease-in-out infinite;
+}
+
+.coin-img {
+  position: absolute;
+  bottom: -60px;
+  left: -80px;
+  width: 200px;
+  z-index: 3;
+  animation: float 6s ease-in-out infinite;
+}
+
+.right-fig-img {
+  position: absolute;
+  top: -160px;
+  right: 12%;
+  width: 250px;
+  z-index: 3;
+}
+
+.girl-img {
+  position: absolute;
+  top: -120px;
+  right: 25%;
+  width: 190px;
+  z-index: 3;
+}
+
+.pan-img {
+  position: absolute;
+  top: -100px;
+  right: -50px;
+  width: 250px;
+  z-index: 3;
+  animation: float 5s ease-in-out infinite;
+}
+
+.card-video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.card-text-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 80px;
+  color: white;
+  text-align: left;
+}
+
+.card-title {
+  font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0 0 24px 0;
+  text-transform: uppercase;
+}
+
+.card-description {
+  font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.95);
+}

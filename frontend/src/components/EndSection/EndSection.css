@@ -1,0 +1,69 @@
+.end-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 150px 20px 200px;
+  position: relative;
+  z-index: 10;
+}
+
+.end-stars-container {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.end-stars-bg {
+  width: 100%;
+  max-width: 1000px;
+  object-fit: cover;
+}
+
+.end-title {
+  font-family: 'Ginto Nord', 'Arial Black', sans-serif;
+  font-size: 52px;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 40px;
+  line-height: 1.1;
+  z-index: 2;
+  letter-spacing: -1px;
+}
+
+.end-download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #23272a;
+  font-family: 'gg sans', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 16px 32px;
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 2;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.end-download-btn:hover {
+  color: #5865F2;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.download-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}

@@ -1,0 +1,56 @@
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background-image: url('../../assets/marqueebg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+  display: flex;
+  position: relative;
+  margin-top: 199px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  margin-bottom: 250px;
+}
+
+.marquee-scrolling-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+  /* Width needs to be exactly twice the content */
+  width: max-content;
+}
+
+.marquee-content-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 50px;
+}
+
+.marquee-content-inner span {
+  font-size: 80px;
+  font-weight: 900;
+  color: white;
+  margin: 0 50px;
+  font-family: 'Ginto Nord', 'Arial Black', sans-serif;
+  letter-spacing: -2px;
+}
+
+.marquee-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
