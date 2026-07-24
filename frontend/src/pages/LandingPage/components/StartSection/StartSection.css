@@ -51,3 +51,15 @@
   width: 24px;
   height: 24px;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .start-section-container {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .start-btn {
+    width: 100%;
+    font-size: 18px;
+  }
+}

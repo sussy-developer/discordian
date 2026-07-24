@@ -125,3 +125,16 @@
 .terms-text a:hover {
   text-decoration: underline;
 }
+
+/* Responsive */
+@media (max-width: 480px) {
+  .register-page {
+    padding: 16px;
+  }
+  .register-container {
+    padding: 24px;
+  }
+  .dob-group {
+    gap: 8px;
+  }
+}

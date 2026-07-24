@@ -235,7 +235,6 @@
   color: #f2f3f5;
 }
 
-/* Responsive */
 @media (max-width: 800px) {
   .login-container {
     max-width: 480px;
@@ -243,5 +242,17 @@
   }
   .login-qr {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-page {
+    padding: 16px;
+  }
+  .login-container {
+    padding: 24px;
+  }
+  .login-header h2 {
+    font-size: 20px;
   }
 }

@@ -235,3 +235,69 @@
   margin: 0;
   color: rgba(255, 255, 255, 0.95);
 }
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .big-card-container {
+    flex-direction: column;
+    height: auto;
+    border-radius: 40px;
+  }
+  .reverse-layout {
+    flex-direction: column;
+  }
+  .card-video-section {
+    padding: 30px;
+    border-radius: 40px 40px 0 0;
+  }
+  .card-text-section {
+    padding: 40px;
+    text-align: center;
+  }
+  .card-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .big-card-wrapper {
+    margin: 80px auto 40px auto;
+    padding: 0 20px;
+  }
+  .big-card-container {
+    border-radius: 32px;
+  }
+  .card-video-section {
+    padding: 20px;
+    border-radius: 32px 32px 0 0;
+  }
+  .card-text-section {
+    padding: 30px 20px;
+  }
+  .card-title {
+    font-size: 28px;
+  }
+  .card-description {
+    font-size: 16px;
+  }
+  
+  /* Hide overlapping floating elements on small mobile */
+  .party-gif, .capcard, .blured-egg, .blured-disc, .carrot-img, .coin-img, .right-fig-img, .girl-img, .pan-img {
+    display: none;
+  }
+}
+
+@media (min-width: 1920px) {
+  .big-card-wrapper {
+    max-width: 1800px;
+  }
+  .big-card-container {
+    height: 700px;
+  }
+  .card-title {
+    font-size: 64px;
+  }
+  .card-description {
+    font-size: 22px;
+  }
+}

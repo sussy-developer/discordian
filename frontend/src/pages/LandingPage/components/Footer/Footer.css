@@ -196,3 +196,17 @@
     min-width: 150px;
   }
 }
+
+@media (max-width: 768px) {
+  .footer-links-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  /* Hide the massive floating footer assets on mobile */
+  .foot-fig-img, .foot-pig-img, .foot-leaf-img {
+    display: none;
+  }
+  .footer-wrapper {
+    margin-top: 100px;
+  }
+}

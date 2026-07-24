@@ -62,7 +62,7 @@ export default function LandingPage() {
         }
       >
         <img src={partyGif} alt="Party character" className="party-gif" />
-        <ParallaxWrapper speed={-0.1}>
+        <ParallaxWrapper speed={-0.04}>
           <img src={bluredEgg} alt="Blurred Egg" className="blured-egg" />
         </ParallaxWrapper>
       </BigCard>
@@ -95,7 +95,7 @@ export default function LandingPage() {
           </>
         }
       >
-        <ParallaxWrapper speed={-0.1}>
+        <ParallaxWrapper speed={-0.04}>
           <img src={bluredDisc} alt="Blurred Disc" className="blured-disc" />
         </ParallaxWrapper>
       </BigCard>
