@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import paperRoll from '../../assets/paper_roll.webp';
-import egg from '../../assets/egg.webp';
-import prize from '../../assets/prize.webp';
-import flyingCat from '../../assets/flying_cat.webp';
-import disc from '../../assets/disc.webp';
-import robo from '../../assets/robo.webp';
+import paperRoll from '../../../../assets/paper_roll.webp';
+import egg from '../../../../assets/egg.webp';
+import prize from '../../../../assets/prize.webp';
+import flyingCat from '../../../../assets/flying_cat.webp';
+import disc from '../../../../assets/disc.webp';
+import robo from '../../../../assets/robo.webp';
 
 const ChevronDown = () => (
   <svg className="navbar-menu-icon" viewBox="0 0 24 24">

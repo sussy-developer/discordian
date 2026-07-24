@@ -1,12 +1,12 @@
 import React from 'react';
-import desktopImage from '../../assets/desktop.webp';
-import standingGirl from '../../assets/standing_girl.webp';
-import robo from '../../assets/robo.webp';
-import roboPig from '../../assets/robo_pig.webp';
-import standingBoy from '../../assets/standing_boy.webp';
-import leaf from '../../assets/leaf.webp';
-import bluredBg1 from '../../assets/blured_bg1.webp';
-import bluredBg2 from '../../assets/blured_bg2.webp';
+import desktopImage from '../../../../assets/desktop.webp';
+import standingGirl from '../../../../assets/standing_girl.webp';
+import robo from '../../../../assets/robo.webp';
+import roboPig from '../../../../assets/robo_pig.webp';
+import standingBoy from '../../../../assets/standing_boy.webp';
+import leaf from '../../../../assets/leaf.webp';
+import bluredBg1 from '../../../../assets/blured_bg1.webp';
+import bluredBg2 from '../../../../assets/blured_bg2.webp';
 
 export default function HeroImage() {
   return (

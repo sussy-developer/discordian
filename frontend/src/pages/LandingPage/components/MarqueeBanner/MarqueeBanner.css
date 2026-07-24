@@ -1,7 +1,7 @@
 .marquee-container {
   width: 100%;
   overflow: hidden;
-  background-image: url('../../assets/marqueebg.png');
+  background-image: url('../../../../assets/marqueebg.png');
   background-size: cover;
   background-position: center;
   padding: 20px 0;

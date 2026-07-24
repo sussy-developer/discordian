@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import HeroImage from './HeroImage';
-import starBg from '../../assets/starbg.webp';
+import starBg from '../../../../assets/starbg.webp';
 
 export default function Hero() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import './MarqueeBanner.css';
-import discIcon from '../../assets/disc.webp'; // Discord logo icon
+import discIcon from '../../../../assets/disc.webp'; // Discord logo icon
 
 export default function MarqueeBanner() {
   // The repeating sequence of text and icons

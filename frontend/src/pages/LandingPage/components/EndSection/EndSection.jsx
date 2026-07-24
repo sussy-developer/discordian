@@ -1,6 +1,6 @@
 import React from 'react';
 import './EndSection.css';
-import starBg from '../../assets/starbg.webp';
+import starBg from '../../../../assets/starbg.webp';
 
 const EndSection = () => {
   return (

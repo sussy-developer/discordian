@@ -3,9 +3,9 @@ import './Footer.css';
 import FooterSocial from './FooterSocial';
 import FooterLinks from './FooterLinks';
 import FooterLogo from './FooterLogo';
-import footFig from '../../assets/footfig.webp';
-import footPig from '../../assets/footpig.webp';
-import leaf from '../../assets/leaf.webp';
+import footFig from '../../../../assets/footfig.webp';
+import footPig from '../../../../assets/footpig.webp';
+import leaf from '../../../../assets/leaf.webp';
 
 const Footer = () => {
   return (
