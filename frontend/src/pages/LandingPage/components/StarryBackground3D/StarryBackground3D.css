@@ -1,0 +1,41 @@
+.starry-bg-3d-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; /* Behind other content */
+  overflow: hidden;
+  pointer-events: none;
+  perspective: 1000px; /* Strong perspective for 3D */
+}
+
+.starry-bg-3d-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform-style: preserve-3d;
+}
+
+.star-3d {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  /* Give them a nice glow */
+  box-shadow: 0 0 12px 2px currentColor;
+}
+
+/* Optional: Subtle pulse animation for some stars */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.star-3d.pulse {
+  animation: pulseGlow 2s infinite alternate;
+}

@@ -9,18 +9,3 @@
   overflow-x: hidden;
 }
 
-.middle-stars-container {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.middle-stars-bg {
-  position: absolute;
-  top: -200px;
-  width: 100%;
-  max-width: 1000px; /* Reduced from 1500px to make stars smaller */
-  z-index: 0;
-  pointer-events: none;
-}

@@ -7,6 +7,7 @@ import ParallaxWrapper from './components/ParallaxWrapper/ParallaxWrapper';
 import MarqueeBanner from './components/MarqueeBanner/MarqueeBanner';
 import EndSection from './components/EndSection/EndSection';
 import Footer from './components/Footer/Footer';
+import StarryBackground3D from './components/StarryBackground3D/StarryBackground3D';
 
 // Assets for Cards
 import card1Video from '../../assets/card1video.mp4';
@@ -35,6 +36,7 @@ import pan from '../../assets/pan.webp';
 export default function LandingPage() {
   return (
     <div className="main-cont">
+      <StarryBackground3D />
       <Navbar />
       <Hero />
       <StartSection />
@@ -67,10 +69,6 @@ export default function LandingPage() {
         </ParallaxWrapper>
       </BigCard>
 
-      <div className="middle-stars-container">
-        <img src={starBg} alt="Stars" className="middle-stars-bg" />
-      </div>
-
       {/* Second Big Card */}
       <BigCard 
         bgImage={card2Bg}
@@ -100,10 +98,6 @@ export default function LandingPage() {
         </ParallaxWrapper>
       </BigCard>
 
-      <div className="middle-stars-container">
-        <img src={starBg} alt="Stars" className="middle-stars-bg" />
-      </div>
-
       <div style={{ height: '100px' }}></div> {/* Spacer gap between 2nd and 3rd card */}
 
       {/* Third Big Card */}
@@ -132,10 +126,6 @@ export default function LandingPage() {
         <img src={capcard3} alt="Capcard" className="capcard" />
       </BigCard>
 
-      <div className="middle-stars-container">
-        <img src={starBg} alt="Stars" className="middle-stars-bg" />
-      </div>
-
       <MarqueeBanner />
 
       {/* Fourth Big Card */}
@@ -161,12 +151,10 @@ export default function LandingPage() {
           </>
         }
       >
-        <img src={coin} alt="Coin" className="coin-img" />
+        <ParallaxWrapper speed={-0.05} mouseSpeed={0.06}>
+          <img src={coin} alt="Coin" className="coin-img" />
+        </ParallaxWrapper>
       </BigCard>
-
-      <div className="middle-stars-container">
-        <img src={starBg} alt="Stars" className="middle-stars-bg" />
-      </div>
 
       <div style={{ height: '100px' }}></div> {/* Spacer gap between 4th and 5th card */}
 
@@ -197,10 +185,6 @@ export default function LandingPage() {
         <img src={rightFig} alt="Right figure character" className="right-fig-img" />
       </BigCard>
 
-      <div className="middle-stars-container">
-        <img src={starBg} alt="Stars" className="middle-stars-bg" />
-      </div>
-
       <div style={{ height: '100px' }}></div> {/* Spacer gap between 5th and 6th card */}
 
       {/* Sixth Big Card */}
@@ -226,7 +210,9 @@ export default function LandingPage() {
           </>
         }
       >
-        <img src={pan} alt="Pan" className="pan-img" />
+        <ParallaxWrapper speed={-0.06} mouseSpeed={0.07}>
+          <img src={pan} alt="Pan" className="pan-img" />
+        </ParallaxWrapper>
       </BigCard>
 
       <EndSection />
